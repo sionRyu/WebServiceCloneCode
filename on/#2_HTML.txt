@@ -1,0 +1,85 @@
+4/29 html공부
+파일의 경로를 하나의 폴더 안에 올바르게 저장하자!
+폴더명,파일명은 항상 소문자로! 저장을 습관화하자!
+.html로 파일 만들기
+
+브라우저가 html,css파일을 해석한다
+
+_2.1 
+Vsc는 편집기일뿐 메모장으로도 웹사이트는 만들 수 있다!
+
+_2.2
+파일의 경로를 잘 보기 예를 들어 폴더 안의 파일을 수정했는데 막상 document경로로 사이트를 열었다면 수정이 반영되지 않을거임
+_2.3
+html에선 tag를 통해서 브라우저가 역할을 인식하게끔 함
+tag를 통해서 웹 사이트 내에 다양한 것들의 위치를 설정해준다고 볼 수 있다
+<h1> 1~6 section heading 
+<ul> unordered list(옆에 점생김) , <ol> ordered list(옆에 숫자가 생김)
+    <li> list item
+_2.4
+<a> anchor(닻) -> link라고 생각하면 됨 <a>는 attributes를 추가로 작성해줘야하는데 이는 부가적인 정보를 추가해줌
+Attribute는 tag에 맞는 것을 사용해야한다!
+href -> 링크를 걸어서 해당 텍스트를 클릭하면 넘어감
+target -> _self 현재 탭에서 링크를 연다 _blank 새 탭에서 링크를 연다
+img 는 self closing tag로 닫는 태그를 따로 써 줄 필요가 없다
+<img src=”링크주소”/>
+<img src=”로컬이미지파일이름”/>
+
+_2.5
+Path notation(경로 표기법)
+폴더 img 안에 포비.jpg가 있을 때 -> img/포비.jpg 
+
+웹사이트엔 <head>와<body>가 있는데 head는 보이지 않는부분(페이지에 관한 환경을 설정) 을 맡고 body는 보이는 부분을 맡는다
+<h1>Hello!</h1>
+<a href="http://google.com" target="_blank">Go to google.com</a>
+<img src="포비.jpg"/>
+
+_2.6
+<title> -> 탭에서 보여지는 제목, 브라우저에서 검색했을 때 제목으로 보여지는 부분
+<meta> -> 부가적인 정보를 나타냄 name과 content를 속성으로 가질 수 있는데 구글에선 description을 찾음 
+<meta charset=””> 브라우저가 텍스트를 인식해서 나타내기 위해 인식할 수 있는 charset을 넣어주자 꼭 넣어줘야 글자가 깨지지 않고 보인다
+<html lang=””> 사이트에서 사용되는 언어가 무엇인지 말해주는 것 (검색엔진에게 한국어인지 영어인지 알랴줌) ex)kr
+<link rel="shortcut icon" sizes="16x16 32x32 64x64" href="https://nomadcoders.co/m.png" />
+사이트의 탭에 작은 이미지가 나타나게 하는 것
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="https://nomadcoders.co/m.png" />
+        <title>Home - My first website.</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content="This is my website"/>
+    </head>
+    <body>
+        <h1>
+            Hello!
+        </h1>
+        <a href="http://google.com" target="_blank">Google go</a>
+        <img src="포비.jpg" />
+    </body>
+</html>
+
+_2.7
+구글에서 html 태그 검색할땐 mdn이라는 사이트를 사용하자! 
+<p> paragraph 길이가 긴 문자열
+<pre> pre-formatted text
+<mark> 하이라이트
+Mdn을 사용했을 때 한국어로 번역하면 특정 태그의 모든 attribute가 문서에 포함되어 있다. 좀 더 검색하기 편하다
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="https://nomadcoders.co/m.png" />
+        <title>Home - My first website.</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content="This is my website"/>
+    </head>
+    <body>
+        <h1>
+        <p>I like to live in <mark>South Korea</mark></p>
+    </body>
+</html>
+_2.8 form tags
+<form> 폼 만들기
+<input/> 입력받기
+	Placeholder -> 뭘 입력해야할지 공란일 때 기본적으로 써져있는 것 
+	Type -> 입력받는 값
+2.8 8분부터
