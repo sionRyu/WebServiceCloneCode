@@ -1,0 +1,75 @@
+<!--#3.0 How to Add CSS to HTML-->
+
+CSS와 HTML을 섞는 법
+1. 같은 HTML 파일에 HTML, CSS 코드를 놓는 방법
+   head tag 안에 style tag를 작성함
+2. CSS와 HTMl을 분리시키는 방법(추천)
+   link tag를 이용해 style.css와 연결하고 rel을 이용해 관계를 적어줌
+
+<head>
+   <title>Home - My first website.</title>
+   <link href="styles.css" rel = "stylesheet" />
+   <style>
+
+   </style>
+</head>
+
+
+
+<!--#3.1 Writing Our First CSS Lines-->
+
+- CSS가 하는 일은 HTML 태그를 가리키는 일. (이 태그는 초록색이다. 이 가리키는 것 자체를 'selector')
+- CSS 작성에선 띄어쓰기를 하지 않는다.
+- font-size:20px; 과 같이, 속성 다음 콜론(:), 값 다음 세미콜론(;)으로 닫아줘야 한다.
+
+속성이름:속성값;
+
+- 밑줄(_) 또는 슬래쉬(/)도 사용해선 안된다.
+- css 또한 어떤 값이든 쓸 수 있다. 하지만 속성에 맞는 값을 써야 브라우저에서 적용이 된다.
+- css 또한 모든 속성을 일일이 다 기억할 필요 없다. 기본적으로 어떻게 동작하는지만 기억하면 된다.
+
+동작 원리
+1. 태그를 지정
+2. 원하는 속성값을 쓴다.
+
+<!--styles.css 파일-->
+blueTitle {
+   color: blue;
+   font-size:20px;
+}
+
+<!--html 파일-->
+<head>
+   <title>Home - My first website.</title>
+   <link href="styles.css" rel = "stylesheet" />
+   <style>
+         h1 {
+            color: blue;
+            font-style: italic;
+            font-size:20px;
+         }
+         address{
+            text-align:center;
+            color:tomato;
+         }
+   </style>
+</head>
+
+
+
+<!--#3.2 What Does Cascading Mean-->
+
+### CSS 뜻과 작동 방식
+
+CSS : Cascading Style Sheet
+Cascading : 위에서 아래로 내려오는 이미지(폭포가 흐르는 것 떠올리기)
+
+어떤 것 다음에 어떤 것이 온다 이것이 cascading이 의미하는 바다.
+브라우저가 CSS 코드를 읽을 때 cascading 방식으로, 즉 위에 있는 코드부터 차례차례로 읽힌다.
+브라우저가 위에서 아래로 읽기 때문에 CSS 읽는 방법을 아는게 가끔 유용하다.
+
+inline CSS와 external CSS 두 CSS 코드가 같은 대상을 가리키게 되면 어떻게 될까?
+→ 브라우저는 위에서 아래로 코드를 읽으므로 마지막에 있는 코드가 우리에게 보여지게 된다.
+가장 마지막으로 변경된 속성이 우리에게 보여진다.
+그래서 코드의 순서를 바꾸면 최종적으로 보여지는 모습이 달라진다.
+CSS는 위에서 아래로 작동한다. 결국 적용 되는 건 가장 마지막 코드다.
