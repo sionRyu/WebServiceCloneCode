@@ -1,9 +1,9 @@
-1. 개발에 앞서 다운 받아야 할 프로그램들
+# Software Requirements
 - 구글 크롬 브라우저, 브레이브
 - visual studio code
 - github desktop
 
-2. 웹사이트의 구성 요소
+# What is HTML, CSS, JavaScript
 - HTML(Hypertext Markup Language) : content 구조 정의 (title, image, text, link, list, sidebar, header..), 콘텐츠가 ‘무엇’인지에 초점
 - CSS(Cascading Style Sheets) : HTML과 같이 쓰이며, content가 어떻게 보여야하는지 정의, 콘텐츠에 ‘어떻게 보이는지’에 초점
 - Javascript : 동적 상호작용(interactivity)이 필요하면 사용, 복잡한 에니메이션  구현 가능, 콘텐츠와 사용자와의 ‘상호작용’에 초점

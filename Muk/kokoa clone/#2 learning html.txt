@@ -1,0 +1,24 @@
+# 2.0 Our First Html File
+- HTML파일 만들 때 확장자는 .html
+- 파일명, 폴더명은 항상 소문자로 작성되어야 한다.
+- 파일 안에 내용이 변경될 때마다 저장을 해야한다. (Ctrl + S)
+
+# 2.1 Setup and Errors
+- 웹사이트를 만드는데 VSC가 있으면 유용하다. 좋은 익스텐션이 많기 때문이다.
+- WakaTime이라는 확장 프로그램 등 유용한 것들이 많다.
+- 익스텐션 추천 : Community Material Theme -> VSC 테마 변경 익스텐션
+- Select Color Theme을 통해서 테마 변경 가능.
+- 익스텐션 추천 : IMaterial Icon Theme -> 아이콘 표시해주는 익스텐션.
+- 브라우저와 HTML에서 중요한 부분 : 브라우저는 아무런 오류가 없다. HTML문법을 따르지 않아도 언제나 사용자에게 콘텐츠를 보여준다. 브라우저는 HTML 파일에 에러가 있다고 알려주지 않는다.
+- 이와 같은 브라우저의 특징은 장단점이 있다.
+- 단점 : 브라우저가 무엇이 잘못된거지 알려주지 않는다는 것.
+- 장점 : 우리가 실수를 하더라도 페이지에 접속한 유저는 콘텐츠를 볼 수 있다는 것.
+
+# 2.2 Our First HTML Tag
+- HTML tag 사이에 넣는 텍스트가 핵심 내용이다. (title, image, 등등)
+- <h1> </h1> ~ <h6> </h6>: 제목 글자 형태, 숫자가 커질수록 글자가 작아짐
+
+# 2.3 More Tags and Prettier
+- <ol> </ol> : 순서가 있는 리스트 (ordered list)
+- <ul> </ul> : 순서가 없는 리스트 (unordered list)
+- <li> </li> => 리스트 사이에 값들을 넣으려면 li로 만들어야 함 (list item)
