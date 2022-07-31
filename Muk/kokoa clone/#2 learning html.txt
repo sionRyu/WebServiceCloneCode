@@ -22,3 +22,45 @@
 - <ol> </ol> : 순서가 있는 리스트 (ordered list)
 - <ul> </ul> : 순서가 없는 리스트 (unordered list)
 - <li> </li> => 리스트 사이에 값들을 넣으려면 li로 만들어야 함 (list item)
+
+# 2.4 Tag Atrributes
+- <a> </a> : link를 떠올리면 되고, 독자적으로 사용했을 때는 큰 의미가 없음 (anchor)
+- attributes는 태그에 추가하는 정보, <tag !---여기에 씀---! > **주의** tag와 attribute 사이는 빈 칸
+    - href = "인터넷 주소 등등" : anchor tag가 가리키는 Url (http reference)
+    - target = "_self" : 현재 브라우저에 연결된 URL을 보여줌
+    - target = "_blank" : 현재 브라우저의 새로운 탭에 연결된 URL을 보여줌
+- <img/> : src attribute를 필요로 함(image)
+    - src="이미지 경로" : 생성하고자 하는 이미지의 경로
+
+# 2.5 More Tags and Head
+- <img>의 src attribute는 url 외에 local image도 표현 가능, by path notation
+- HTML 작성 규칙
+    - 시작은 !DOCTYPE html 이며, 현재 파일이 html 형식임을 알려줌
+    - <html> : html문서임을 나타냄
+          <head> </head> : html의 configuration을 설정, meta 정보들을 설정 
+                           ex ) <title> </title> : 브라우저의 제목 표시줄에 해당하는 내용을 정의 (title)
+          <body> </body> : html의 contents가 들어가는 곳, visible한 내용이 들어감
+      </html>
+
+# 2.6 Its All About the Head
+- meta : 부가적인 정보
+- title, base, link, style, script 요소를 사용하여 표현할 수 없는 다양한 종류의 메타데이터를 나타냄
+- meta has 2 attribute (content, name)
+- meta charset : 한글이나 특수문자가 있는 언어를 브라우저가 이해 못 할 때가 있음, 이때 사용해주면 글자가 깨지는 걸 방지해줌. (utf-8 사용)
+- og~~ : 링크 공유시 미리보기로 나타나는 내용
+
+# 2.7 More Tags
+- mdn 홈페이지로 모르는거 검색
+- ctrl + d 하면 단어 한 번에 수정 가능
+
+# 2.8 Form Tags
+- form 과 관련한 mdn 문서 참고
+
+# 2.9 More Tags and IDs
+-
+
+# 2.10 Semantic HTML
+-
+
+# 2.11 Recap
+-
